@@ -76,3 +76,8 @@ p {
   vertical-align: middle;
   margin-right: 8px;
 }
+
+.calendar-section {
+  margin-top: 60px;
+  padding-bottom: 40px;
+}
