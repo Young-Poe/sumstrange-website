@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Merch – SUMSTRANGE</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .merch-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .merch-item {
+      border: 2px solid #9333ea;
+      border-radius: 12px;
+      padding: 1rem;
+      background: #1a1a1a;
+    }
+    .merch-item h3 {
+      color: #fff;
+      font-size: 1.2rem;
+      margin-bottom: 0.25rem;
+    }
+    .merch-item p {
+      color: #ccc;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="SUMSTRANGE Logo" class="logo" />
+    <h1>Merch</h1>
+    <p>Tap into our drops. Designed by the collective.</p>
+
+    <nav class="main-nav">
+      <a href="index.html">🏠 Home</a>
+      <a href="studio.html">🎙 Studio</a>
+      <a href="merch.html">👕 Merch</a>
+      <a href="shows.html">🎤 Shows</a>
+      <a href="about.html">🧠 About</a>
+    </nav>
+
+    <section class="merch-grid">
+      <div class="merch-item">
+        <h3>Kick Me T</h3>
+        <p>$35</p>
+      </div>
+      <div class="merch-item">
+        <h3>Space Ship T</h3>
+        <p>$40</p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
