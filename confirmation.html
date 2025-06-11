@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,14 +6,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Session Confirmed – SUMSTRANGE</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .info {
+      text-align: left;
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: #1a1a1a;
+      border: 2px solid #9333ea;
+      border-radius: 12px;
+      text-align: center;
+    }
+    .info h2, .info p { color: #ccc; margin: 0.5rem 0; }
+    .cta {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      color: #c084fc;
+      border: 2px solid #9333ea;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s, color 0.3s;
+    }
+    .cta:hover {
+      background-color: #9333ea;
+      color: white;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
     <img src="logo.png" alt="SUMSTRANGE Logo" class="logo" />
     <h1>✅ Session Confirmed</h1>
-    <p>You're locked in. We'll see you in the studio at your scheduled time.</p>
-    <p>Need to reschedule? Use your Calendly confirmation or hit us directly.</p>
-    <a href="index.html" class="cta">Back to Home</a>
+
+    <nav class="main-nav">
+      <a href="index.html">🏠 Home</a>
+      <a href="studio.html">🎙 Studio</a>
+      <a href="merch.html">👕 Merch</a>
+      <a href="shows.html">🎤 Shows</a>
+      <a href="about.html">🧠 About</a>
+      <a href="sumstrange_social.html">📲 Social</a>
+    </nav>
+
+    <div class="info">
+      <p>You're locked in. We'll see you in the studio at your scheduled time.</p>
+      <p>Need to reschedule? Use your Calendly confirmation or hit us directly.</p>
+      <a href="index.html" class="cta">← Back to Home</a>
+    </div>
   </div>
 </body>
 </html>
