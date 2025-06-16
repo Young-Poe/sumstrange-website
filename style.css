@@ -65,6 +65,26 @@ nav a:hover {
   margin-top: 2rem;
 }
 
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin-top: 2rem;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.2s ease-in-out;
+}
+
+.image-grid img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
 footer {
   margin-top: 4rem;
   font-size: 0.8rem;
