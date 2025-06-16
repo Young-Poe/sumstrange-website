@@ -107,7 +107,8 @@ nav a:hover {
 
 .flyer-thumb {
   width: 100%;
-  height: auto;
+  height: 400px;
+  object-fit: cover;
   border-radius: 8px;
   margin-bottom: 0.5rem;
 }
