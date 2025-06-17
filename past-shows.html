@@ -29,6 +29,11 @@
         <p>April 18, 2025</p>
       </div>
     </section>
+<div class="show-card" onclick="openGallery('axelrad')">
+  <img src="Images/axelrad-2025/AfterlightImage 00.JPG" alt="Zegovia at Axelrad Flyer" class="flyer-thumb" />
+  <h2>Zegovia @ Axelrad</h2>
+  <p>March 22, 2025</p>
+</div>
 
     <!-- Lightbox Overlay -->
     <div id="galleryOverlay" class="overlay">
@@ -39,25 +44,32 @@
 
   <!-- JS to Load Images Dynamically -->
   <script>
-    const galleries = {
-      shfl: Array.from({ length: 62 }, (_, i) => {
-        const num = i + 1;
-        const ext = num < 30 ? '.jpg' : '.JPG'; // Match your actual file extensions
-        return `Images/shfl-2025/shfl${num}${ext}`;
-      })
-    };
+  const galleries = {
+    // SHFL Gallery
+    shfl: Array.from({ length: 62 }, (_, i) => {
+      const num = i + 1;
+      const ext = num < 30 ? '.jpg' : '.JPG';
+      return `Images/shfl-2025/shfl${num}${ext}`;
+    }),
 
-    function openGallery(key) {
-      const gallery = galleries[key];
-      const container = document.getElementById('galleryImages');
-      container.innerHTML = gallery.map(src => `<img src="${src}" alt="">`).join('');
-      document.getElementById('galleryOverlay').style.display = 'flex';
-    }
+    // Axelrad Gallery for Zegovia
+    axelrad: Array.from({ length: 63 }, (_, i) => {
+      const numStr = i.toString().padStart(2, '0'); // 0 → "00", 1 → "01", ..., 62 → "62"
+      return `Images/axelrad-2025/AfterlightImage ${numStr}.JPG`;
+    })
+  };
 
-    function closeGallery() {
-      document.getElementById('galleryOverlay').style.display = 'none';
-      document.getElementById('galleryImages').innerHTML = '';
-    }
-  </script>
+  function openGallery(key) {
+    const gallery = galleries[key];
+    const container = document.getElementById('galleryImages');
+    container.innerHTML = gallery.map(src => `<img src="${src}" alt="">`).join('');
+    document.getElementById('galleryOverlay').style.display = 'flex';
+  }
+
+  function closeGallery() {
+    document.getElementById('galleryOverlay').style.display = 'none';
+    document.getElementById('galleryImages').innerHTML = '';
+  }
+</script>
 </body>
 </html>
