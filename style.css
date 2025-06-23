@@ -169,3 +169,33 @@ footer nav a {
   padding: 0.25rem 0.5rem;
   font-size: 0.9rem;
 }
+
+.footer {
+  background-color: #111;
+  color: #ccc;
+  padding: 2rem 1rem;
+  margin-top: 4rem;
+  font-size: 0.95rem;
+  border-top: 1px solid #222;
+}
+
+.footer a {
+  color: #c084fc;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer .social-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+.footer .social-list li {
+  margin: 0.3rem 0;
+}
