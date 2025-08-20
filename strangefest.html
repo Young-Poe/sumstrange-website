@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>STRANGE FEST — Tickets</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="STRANGE FEST — Oct 31, 2025 · Houston, Texas. Get your tickets." />
+
+  <!-- Fonts (spooky + clean pairing) -->
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Page styles -->
+  <link rel="stylesheet" href="/css/strangefest.css" />
+
+  <!-- OpenGraph for sharing -->
+  <meta property="og:title" content="STRANGE FEST — Tickets" />
+  <meta property="og:description" content="Oct 31, 2025 · Houston, TX. Early Bird on sale now." />
+  <meta property="og:image" content="https://yourdomain.com/images/strangefest-hero.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com/strangefest.html" />
+</head>
+<body class="sf-body">
+  <!-- Site header (add the STRANGE FEST tab to your main nav too) -->
+  <header class="sf-header">
+    <a class="sf-brand" href="/">SUMSTRANGE</a>
+    <nav class="sf-nav">
+      <a href="/studio.html">Studio</a>
+      <a href="/contact.html">Contact</a>
+      <a class="sf-cta" href="/strangefest.html" aria-current="page">STRANGE FEST</a>
+    </nav>
+  </header>
+
+  <!-- Hero: mushroom silhouette + moon face + engraved stone slab -->
+  <main class="sf-wrap">
+    <section class="sf-hero">
+      <div class="sf-hero__art">
+        <!-- Replace these with your real images when ready -->
+        <img class="sf-moon" src="/images/moon-face.png" alt="Moon with a face" />
+        <img class="sf-mushroom" src="/images/mushroom-silhouette.png" alt="Giant mushroom silhouette" />
+        <img class="sf-foreground" src="/images/stone-ground.png" alt="" aria-hidden="true" />
+      </div>
+
+      <div class="sf-hero__text">
+        <span class="sf-pill">SUMSTRANGE presents</span>
+        <h1 class="sf-title">STRANGE FEST</h1>
+        <p class="sf-sub">Oct 31, 2025 • Houston, Texas</p>
+        <p class="sf-sub">Halloween Edition • Live Performances • Vendors</p>
+
+        <div class="sf-actions">
+          <a class="sf-btn"
+             href="YOUR_STRIPE_PAYMENT_LINK?utm_source=site&utm_medium=button&utm_campaign=strangefest"
+             target="_blank" rel="noopener">Buy Tickets</a>
+          <p class="sf-note">Secure checkout on Stripe.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ticket cards with engraved vibe -->
+    <section class="sf-section">
+      <h2 class="sf-h2">Tickets</h2>
+      <div class="sf-grid">
+        <article class="sf-card">
+          <h3>Early Bird GA</h3>
+          <div class="sf-price">$XX</div>
+          <a class="sf-btn"
+             href="YOUR_STRIPE_PAYMENT_LINK"
+             target="_blank" rel="noopener">Buy Early Bird</a>
+          <p class="sf-small">Limited quantity.</p>
+        </article>
+
+        <article class="sf-card">
+          <h3>General Admission</h3>
+          <div class="sf-price">$XX</div>
+          <a class="sf-btn"
+             href="YOUR_STRIPE_PAYMENT_LINK"
+             target="_blank" rel="noopener">Buy GA</a>
+        </article>
+
+        <article class="sf-card">
+          <h3>VIP</h3>
+          <div class="sf-price">$XX</div>
+          <a class="sf-btn"
+             href="YOUR_STRIPE_PAYMENT_LINK"
+             target="_blank" rel="noopener">Buy VIP</a>
+          <p class="sf-small">VIP lounge + limited merch.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="sf-faq">
+      <details>
+        <summary>What’s the vibe?</summary>
+        <p>Halloween edition. Big mushroom. Moon with a face. Engraved stone aesthetics. Come weird.</p>
+      </details>
+      <details>
+        <summary>Vendors, photographers, videographers</summary>
+        <p>Apply via the vendor page or hit us on the contact page. Limited slots—move fast.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="sf-footer">
+    <p>© <span id="y"></span> SUMSTRANGE • <a href="/contact.html">Contact</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
