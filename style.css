@@ -223,3 +223,9 @@ footer nav a {
   box-shadow: 0 8px 20px rgba(0,0,0,0.5);
   display: block;
 }
+.ticket-img {
+  max-width: 300px; /* or 50%, or whatever you want */
+  height: auto;
+  display: block;
+  margin: 1rem auto; /* centers it */
+}
