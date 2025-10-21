@@ -1,118 +1,59 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>🎃 STRANGE FEST 2025 — PHASE II</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="1.ico" />
-  <style>
-    body {
-      text-align: center;
-      color: #fff;
-      background-color: #000;
-      font-family: system-ui, sans-serif;
-    }
-
-    header img.logo {
-      width: 150px;
-      margin-top: 20px;
-    }
-
-    main {
-      margin-top: 1.5rem;
-    }
-
-    .ticket-img {
-      width: 90%;
-      max-width: 450px;
-      border-radius: 10px;
-      margin: 1.5rem 0;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #9333ea;
-      color: #fff;
-      padding: 0.75rem 1.75rem;
-      font-weight: bold;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background 0.2s ease;
-    }
-    .btn:hover {
-      background: #a855f7;
-    }
-
-    footer {
-      margin-top: 3rem;
-      border-top: 2px solid #222;
-      padding-top: 1.5rem;
-      color: #aaa;
-    }
-
-    footer nav a {
-      color: #ccc;
-      margin: 0 0.5rem;
-      text-decoration: none;
-    }
-    footer nav a:hover {
-      color: #fff;
-    }
-
-    footer p {
-      margin: 0.75rem 0;
-    }
-    footer a {
-      color: #9333ea;
-      text-decoration: none;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <!-- Header with logo -->
-  <header>
+  <div class="container">
+    <!-- Header / Logo -->
     <img src="logo.png" alt="SUMSTRANGE Logo" class="logo" />
-  </header>
-
-  <!-- Main content -->
-  <main class="container">
     <h1>STRANGE FEST 2025 — PHASE II</h1>
-    <p>October 31, 2025 • Houston, TX</p>
+    <p>Halloween | October 31, 2025 • Houston, TX</p>
 
-    <!-- Ticket image -->
-    <img src="Images/ticket.png" alt="Strange Fest Ticket" class="ticket-img" />
-
-    <!-- Buy button -->
-    <a
-      class="btn"
-      href="https://buy.stripe.com/REPLACE_WITH_PHASE2_LINK"
-      target="_blank"
-      rel="noopener"
-    >Buy Tickets — $18 🎟</a>
-  </main>
-
-  <!-- Footer with nav and socials -->
-  <footer>
-    <nav>
-      <a href="index.html">🏠 Home</a>
+    <!-- Same nav as index -->
+    <nav class="main-nav">
       <a href="studio.html">🎙 Studio</a>
       <a href="merch.html">👕 Merch</a>
       <a href="shows.html">🎤 Shows</a>
       <a href="about.html">🧠 About</a>
       <a href="location.html">📍 Location</a>
       <a href="sumstrange_social.html">📲 Social</a>
+      <a href="/strangefest.html" class="active">🎃 STRANGE FEST</a>
     </nav>
 
+    <!-- Tickets section (clean, centered) -->
+    <section>
+      <h2>Tickets</h2>
+      <p>Phase II is live — <strong>$18</strong> per ticket. Limited quantity.</p>
+
+      <!-- Ticket image -->
+      <img src="Images/ticket.png" alt="Strange Fest Ticket" class="ticket-img" />
+
+      <!-- Buy button -->
+      <p>
+        <a
+          class="btn"
+          href="https://buy.stripe.com/REPLACE_WITH_PHASE2_LINK"
+          target="_blank"
+          rel="noopener"
+        >Buy Tickets — $18 🎟</a>
+      </p>
+    </section>
+  </div>
+
+  <!-- Same footer as index -->
+  <footer class="footer">
+    <hr />
     <p>📞 Call or Text: <a href="tel:3467636145">346-763-6145</a></p>
-    <p>📸 Follow us on Instagram:
-      <a href="https://instagram.com/sumstrangemusic" target="_blank">@sumstrangemusic</a> /
-      <a href="https://instagram.com/sumstrangestudio" target="_blank">@sumstrangestudio</a>
-    </p>
+    <p>📸 Follow us on Instagram:</p>
+    <ul class="social-list">
+      <li><a href="https://instagram.com/sumstrangemusic" target="_blank">@sumstrangemusic</a> (Collective)</li>
+      <li><a href="https://instagram.com/sumstrangestudio" target="_blank">@sumstrangestudio</a> (Studio)</li>
+    </ul>
   </footer>
 </body>
 </html>
